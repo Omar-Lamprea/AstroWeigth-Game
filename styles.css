@@ -1,0 +1,51 @@
+body{
+	background-image: url(space.jpg);
+	background-repeat: no-repeat;
+	background-size: 200vh;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+}
+
+.container-main{
+	margin: 0 auto;
+	width: 80%;
+	box-shadow: 0px 0px 10px 1px #000
+}
+
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.planet{
+	font-family: monospace;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	border-radius: 30px;
+	height: 128px;
+	width: 128px;
+	margin: 0;
+	transition: background-color .5s;
+	color: #77e0d4;
+}
+.planet:hover{
+	cursor: pointer;
+	background-color: #000000ab
+}
+
+.canvas{
+	z-index: -1;
+	margin: -7em;
+	/*margin-right: -26em*/
+}
+
+.info{
+	/*margin-right: 280px*/
+}
+.info-planet{
+	display: none;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>AstroWeigth</title>
+</head>
+<body>
+	<h1>AstroWeigth</h1>
+	<!-- <p>Mueve al astronauta por los planetas para saber su peso a partir de la gravedad de cada planeta!</p> -->
+	<div class="info">
+				<p class="info-planet" id="info">Tu peso en marte es de 5454!</p>
+			</div>
+	<div class="container-main">
+		<div class="top">
+			<button class="planet marte">Marte<img src="marte.png" width="100px"></button>
+		</div>
+		<div class="center">
+			<button class="planet jupiter">Jupiter<img src="jupiter.png" width="100px" ></button>
+			<canvas width="800" height="600" id="canvas" class="canvas"></canvas>
+			<button class="planet mercurio">Mercurio<img src="mercurio.png" width="100px"></button>
+		</div>
+		<div class="bottom">
+			<button class=" planet venus">Venus<img src="venus.png" width="100px" ></button>
+		</div>
+	</div>
+	<script src="main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</body>
+</html>
