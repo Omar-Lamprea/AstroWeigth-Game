@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas')
 const paper = canvas.getContext('2d')
 
 const voidd = document.getElementById('void')
-const info_weigth = document.getElementById('info-weigth')
+const info_weight = document.getElementById('info-weight')
 
 /*const planetas = {
 	url1: 'marte.png',
@@ -93,7 +93,6 @@ const movement = 32
 
 function moveAstronaut(evento){
 
-	
 	switch(evento.keyCode){
 		case flechas.UP:
 			clearPj()
@@ -122,31 +121,29 @@ function moveAstronaut(evento){
 
 	//position alerts
 
-
-
 	if(xInit == 368 && yInit == 268 - 32 * 6){
 		voidd.style.display = 'none'
-		info_weigth.style.display = 'block'
+		info_weight.style.display = 'block'
 		marte()
 	}else{
-		info_weigth.innerHTML = '.'
+		info_weight.innerHTML = '.'
 	}
 
 	if(xInit == 368 && yInit == 268 + 32 * 7){
 		voidd.style.display = 'none'
-		info_weigth.style.display = 'block'
+		info_weight.style.display = 'block'
 		venus()
 	}
 
 	if(xInit == 368 + 32 * 10 && yInit == 268){
 		voidd.style.display = 'none'
-		info_weigth.style.display = 'block'
+		info_weight.style.display = 'block'
 		mercurio()
 	}
 
 	if(xInit == 368 - 32 * 10 && yInit == 268){
 		voidd.style.display = 'none'
-		info_weigth.style.display = 'block'
+		info_weight.style.display = 'block'
 		jupiter()	
 	}
 		
@@ -158,7 +155,7 @@ function clearPj(){
 
 // peso 
 
-const weigth = document.getElementById('numberWeigth')
+const weight = document.getElementById('numberWeight')
 const g_tierra = 9.8
 const g_marte = 3.7
 const g_jupiter = 24.8
@@ -168,22 +165,22 @@ const g_venus = 8.87
 let peso_final
 
 
-function marte(){
-	peso_final = weigth.value * g_marte / g_tierra;
-	info_weigth.innerHTML = '<strong>Tu peso en Marte es ' + peso_final.toFixed(2) + ' kilos!</strong>'
+function marte(){ 
+	peso_final = weight.value * g_marte / g_tierra;
+	info_weight.innerHTML = '<strong>Tu peso en Marte es ' + peso_final.toFixed(2) + ' kilos!</strong>'
 }
 
 function jupiter(){
-	peso_final = weigth.value * g_jupiter / g_tierra;
-	info_weigth.innerHTML = '<strong>Tu peso en Jupiter es ' + peso_final.toFixed(2) + ' kilos!</strong>'
+	peso_final = weight.value * g_jupiter / g_tierra;
+	info_weight.innerHTML = '<strong>Tu peso en Jupiter es ' + peso_final.toFixed(2) + ' kilos!</strong>'
 }
 
 function mercurio(){
-	peso_final = weigth.value * g_mercurio / g_tierra;
-	info_weigth.innerHTML = '<strong>Tu peso en Mercurio es ' + peso_final.toFixed(2) + ' kilos!</strong>'
+	peso_final = weight.value * g_mercurio / g_tierra;
+	info_weight.innerHTML = '<strong>Tu peso en Mercurio es ' + peso_final.toFixed(2) + ' kilos!</strong>'
 }
 
 function venus(){
-	peso_final = weigth.value * g_venus / g_tierra;
-	info_weigth.innerHTML = '<strong>Tu peso en Venus es ' + peso_final.toFixed(2) + ' kilos!</strong>'
+	peso_final = weight.value * g_venus / g_tierra;
+	info_weight.innerHTML = '<strong>Tu peso en Venus es ' + peso_final.toFixed(2) + ' kilos!</strong>'
 }
