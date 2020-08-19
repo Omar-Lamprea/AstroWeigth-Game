@@ -4,12 +4,17 @@ body{
 	background-size: 200vh;
 	text-align: center;
 	margin: 0;
-	color: #fff;
+	color: #77e0d4;
+}
+
+p{
+	margin: 7px
 }
 
 .container-main{
 	margin: 0 auto;
 	width: 80%;
+	height: 78vh;
 	box-shadow: 0px 0px 10px 1px #000
 }
 
@@ -28,7 +33,7 @@ body{
 	border-radius: 30px;
 	height: 128px;
 	width: 128px;
-	margin: 0;
+	margin: -.2em;
 	transition: background-color .5s;
 	color: #77e0d4;
 }
@@ -38,14 +43,15 @@ body{
 }
 
 .canvas{
-	z-index: -1;
+	z-index: 1;
 	margin: -7em;
 	/*margin-right: -26em*/
 }
 
 .info{
-	/*margin-right: 280px*/
+
 }
 .info-planet{
 	display: none;
+	margin: 7px
 }
